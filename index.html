@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eurtech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./alter_style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="tot-page">
+      <!-- start of navigation section  -->
+
+      <header class="header-section">
+        <!-- Start of top header  -->
+
+        <div class="top-header">
+          <a href="#" class="logo-container">
+            <img src="./Images/title.png" alt="" />
+          </a>
+
+          <div class="header-menu-section">
+            <div class="nav-contact">
+              <div class="nav-contact-info">
+                <div class="contact-img">
+                  <img src="./Images/phone.png" alt="" />
+                </div>
+                <div class="contact-info">
+                  <p>Call us now</p>
+                  <h4>0987654321</h4>
+                </div>
+              </div>
+
+              <div class="nav-contact-info">
+                <div class="contact-img">
+                  <img src="./Images/mail.png" alt="" />
+                </div>
+                <div class="contact-info">
+                  <p>Email Address</p>
+                  <h4>sreegovind1011@gmail.com</h4>
+                </div>
+              </div>
+            </div>
+            <div class="appointment-box">
+              <h4>GET APPOINTMENT</h4>
+            </div>
+          </div>
+
+          <img
+            src="./Images/menu-bar.png"
+            alt="menu bar"
+            class="toggle-menu"
+            onclick="openNav()"
+          />
+        </div>
+        <!-- side nav -->
+        <div class="fix">
+          <div id="sidenav" class="sidenav">
+            <div class="sidenav-content">
+              <div class="sidenav-header">
+                <img
+                  src="./Images/title-2.png"
+                  alt="Eurtech Logo"
+                  class="logo"
+                />
+                <div class="sidenav-close">
+                  <button class="close-btn" onclick="closeNav()">
+                    &times;
+                  </button>
+                </div>
+              </div>
+              <div class="sidenav-searchbox">
+                <input
+                  type="text"
+                  placeholder="What are you searching for?"
+                  class="search-input"
+                />
+                <button class="search-btn">&#128269;</button>
+              </div>
+              <div class="sidenav-menu">
+                <ul class="nav-links">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="sidenav-contact-info">
+                <h4>Contact Info</h4>
+                <ul>
+                  <li class="center-align">
+                    <div class="contactinfo-icon"></div>
+                    <div class="contactinfo-text">
+                      <a>12, Marchbank Road, Birmingham, UK</a>
+                    </div>
+                  </li>
+                  <li class="center-align">
+                    <div class="contactinfo-icon"></div>
+                    <div class="contactinfo-text">
+                      <a>+008897238474</a>
+                    </div>
+                  </li>
+                  <li class="center-align">
+                    <div class="contactinfo-icon"></div>
+                    <div class="contactinfo-text">
+                      <a>support@email.com</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="sidenav-socialmedia">
+                <ul>
+                  <li><a>f</a></li>
+                  <li><a>t</a></li>
+                  <li><a>Y</a></li>
+                  <li><a>in</a></li>
+                </ul>
+                <!-- Add contact details here -->
+              </div>
+              <!-- Add contact details here -->
+            </div>
+          </div>
+        </div>
+        <div id="sidemenu-overlay" class="sidemenu-overlay"></div>
+
+        <!-- end of top header  -->
+
+        <!-- start of navigation section  -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+          <div class="container">
+            <div class="col-4">
+              <button
+                class="btn btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+              >
+                <img
+                  src="./Images/menu-dots.png"
+                  alt=""
+                  width="30"
+                  height="24"
+                />
+              </button>
+
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+                id="offcanvas"
+              >
+                <div class="offcanvas-header">
+                  <img
+                    src="./Images/title-2.png"
+                    alt="Eurtech Logo"
+                    class="logo"
+                  />
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                    style="background-color: white"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="sidenav-searchbox">
+                    <input
+                      type="text"
+                      placeholder="What are you searching for?"
+                      class="search-input"
+                    />
+                    <button class="search-btn">&#128269;</button>
+                  </div>
+                  <div class="sidenav-contact-info">
+                    <h4>Contact Info</h4>
+                    <ul>
+                      <li class="center-align">
+                        <div class="contactinfo-icon"></div>
+                        <div class="contactinfo-text">
+                          <a>12, Marchbank Road, Birmingham, UK</a>
+                        </div>
+                      </li>
+                      <li class="center-align">
+                        <div class="contactinfo-icon"></div>
+                        <div class="contactinfo-text">
+                          <a>+008897238474</a>
+                        </div>
+                      </li>
+                      <li class="center-align">
+                        <div class="contactinfo-icon"></div>
+                        <div class="contactinfo-text">
+                          <a>support@email.com</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sidenav-socialmedia">
+                    <ul>
+                      <li><a>f</a></li>
+                      <li><a>t</a></li>
+                      <li><a>Y</a></li>
+                      <li><a>in</a></li>
+                    </ul>
+                    <!-- Add contact details here -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link active dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HOME
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">HOME STYLE 01</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">HOME STYLE 02</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">HOME STYLE 03</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    SERVICES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">SERVICE</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">SERVICE DETAILS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    BLOG
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">BLOG</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">BLOG DETAILS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PAGES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">TEAM</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">TEAM DETAILS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">CASE STUDY</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">CASE DETAILS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">PRICING</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">FAQ</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">404 PAGE</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <a class="navbar-brand" href="#">
+                  <img
+                    src="./Images/search.png"
+                    alt=""
+                    width="30"
+                    height="24"
+                  />
+                </a>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- end of navigation section -->
+
+      <!-- Hero Body start  -->
+
+      <section class="hero-body">
+        <div class="hero-body-words">
+          <span>We Provide Outsourced</span>
+          <h2>IT Solution</h2>
+          <p>
+            IT producers worldwide face similar challenges around animal
+            welfare, farm <br />
+            profitability, product and work efficiency.
+          </p>
+          <div class="start-box">
+            <div class="getStarted-box">
+              <h4>GET STARTED</h4>
+            </div>
+            <div class="play-box">
+              <img src="./Images/play.png" alt="play" class="play-btn" />
+              <h4>INTRO VIDEO</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero Body end  -->
+
+      <!-- start about us section -->
+
+      <section class="about-us-section">
+        <div class="about-imgs">
+          <div class="experience-box">
+            <h2>30</h2>
+            <p>Years Experience</p>
+          </div>
+          <img
+            src="./Images/about-us-img.jpg"
+            alt="aboutus"
+            class="about-us-img"
+          />
+        </div>
+        <div class="about-us-words">
+          <div class="about-us-title">
+            <span>// About Us</span>
+            <h2>
+              Best in classy product <br />
+              near from you.
+            </h2>
+          </div>
+          <div class="about-us-descrip">
+            <p>
+              From finance, retail, and travel, to social media, cybersecurity,
+              adtech, and more,<br />
+              market leaders are leveraging web data to maintain their
+              advantage. Discover how <br />
+              it can work for you.
+            </p>
+          </div>
+          <div class="about-us-quote">
+            <h3>
+              Highest quality data, #01 network uptime, fastest output.
+              <br />
+              Unlimited scale and customizing possibilities.
+            </h3>
+            <h4>Miranda Helson, <span>Head Of Idea</span></h4>
+          </div>
+          <div class="learn-box">
+            <div class="learn-more">
+              <h4>LEARN MORE</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of about us section  -->
+
+      <!-- start work stats section  -->
+
+      <section class="work-stats-section">
+        <div class="counter-section">
+          <div>
+            <h2 class="counter-numbers">30</h2>
+            <p>Year experience <br />in this field</p>
+          </div>
+
+          <div>
+            <h2 class="counter-numbers">696</h2>
+            <p>Worldwide good<br />clients</p>
+          </div>
+          <div>
+            <h2 class="counter-numbers">1200</h2>
+            <p>Worldwide Captured<br />online base</p>
+          </div>
+          <div>
+            <h2 class="counter-numbers">5</h2>
+            <p>Masterclass Team<br />ever made</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of work stats section  -->
+
+      <!-- start of service section  -->
+
+      <section class="service-section">
+        <div class="service-header">
+          <div class="service-title">
+            <span>// Service</span>
+            <h2>What we do here</h2>
+          </div>
+          <div class="service-box">
+            <div class="service-btn">
+              <h4>SERVICES</h4>
+            </div>
+          </div>
+        </div>
+        <div class="service-options">
+          <div class="service-grid">
+            <div>
+              <img src="./Images/seo.png" alt="" />
+              <h2>SEO Monitoring</h2>
+              <p>
+                The quality data, best network <br />uptime, fastest output.
+              </p>
+              <br />
+              <span>// Read More</span>
+            </div>
+            <div>
+              <img src="./Images/server.png" alt="" />
+              <h2>Server Security</h2>
+              <p>
+                The quality data, best network <br />uptime, fastest output.
+              </p>
+              <br />
+              <span>// Read More</span>
+            </div>
+            <div>
+              <img src="./Images/ui.png" alt="" />
+              <h2>UX/UI Strategy</h2>
+              <p>
+                The quality data, best network <br />uptime, fastest output.
+              </p>
+              <br />
+              <span>// Read More</span>
+            </div>
+            <div>
+              <img src="./Images/analyse.png" alt="" />
+              <h2>Analysis Tools</h2>
+              <p>
+                The quality data, best network <br />uptime, fastest output.
+              </p>
+              <br />
+              <span>// Read More</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of service section  -->
+
+      <!-- start of customer experience section  -->
+
+      <section class="customer-experience-section">
+        <div class="cust-header">
+          <div class="cust-title">
+            <span>// Some Facts</span>
+            <h1>The best customer <br />experience</h1>
+          </div>
+          <div class="skills-area">
+            <div class="skill">
+              <div class="separate">
+                <div class="skill-title"><h2>Design & Servicing</h2></div>
+                <span class="skill-percent"><h2>64%</h2></span>
+              </div>
+              <div class="skill-bar"></div>
+              <div class="ds skill-fill"></div>
+            </div>
+            <div class="skill">
+              <div class="separate">
+                <div class="skill-title"><h2>Support & Productivity</h2></div>
+                <span class="skill-percent"><h2>82%</h2></span>
+              </div>
+              <div class="skill-bar"></div>
+              <div class="sop skill-fill"></div>
+            </div>
+            <div class="skill">
+              <div class="separate">
+                <div class="skill-title"><h2>Troubleshooting</h2></div>
+                <span class="skill-percent"><h2>70%</h2></span>
+              </div>
+              <div class="skill-bar"></div>
+              <div class="t skill-fill"></div>
+            </div>
+          </div>
+        </div>
+        <div class="experience-img">
+          <img src="./Images/exp-img.png" alt="exp" />
+        </div>
+      </section>
+
+      <!-- end of customer experience section  -->
+
+      <!-- start of query / what we do here section  -->
+
+      <section class="query-section">
+        <span>// Services //</span>
+        <h1>What we do here</h1>
+        <div class="query-boxes">
+          <form>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email address"
+            />
+            <input
+              type="name"
+              id="name"
+              name="name"
+              placeholder="Website name"
+            />
+            <div class="test-speed-box">
+              <h4>TEST SPEED</h4>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- end of query / what we do here section  -->
+
+      <!-- start of portfolio section  -->
+
+      <section class="portfolio-section">
+        <div class="port-header">
+          <div class="port-title">
+            <span>// Portfolio</span>
+            <h1>Case studies</h1>
+          </div>
+          <div class="arrow-toggle">
+            <div class="arrow-box">
+              <span><</span>
+            </div>
+            <div class="arrow-box">
+              <span>></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <img src="./Images/cyber.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Cybersecurity</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./Images/prob-sol.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">Problem Solutions</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <img src="./Images/web.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Web Analysis</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./Images/prod-ana.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">Product Analysis</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of portfolio section  -->
+
+      <!-- start of feedback section  -->
+
+      <section class="feedback-section">
+        <div class="feedback-header">
+          <span>// Testimonals //</span>
+          <h1>User Feedbacks</h1>
+        </div>
+        <div class="feedback-container">
+          <div class="feedback-box1">
+            <div class="box-content">
+              <p>
+                “ The worlds #1 web data platform from data collection
+                infrastructure to ready-made datasets, brights tow allow you to
+                retrieve the public web data you care about. ”
+              </p>
+            </div>
+            <div class="box-user">
+              <img src="./Images/prof.png" alt="" />
+              <div class="user-info">
+                <h4>Miranda Nelson</h4>
+                <p>Head of Idea</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback-box2">
+            <div class="box-content">
+              <p>
+                “ The worlds #2 web data platform from data collection
+                infrastructure to ready-made datasets, brights tow allow you to
+                retrieve the public web data you care about. ”
+              </p>
+            </div>
+            <div class="box-user">
+              <img src="./Images/prof.png" alt="" />
+              <div class="user-info">
+                <h4>Alexis Dowson</h4>
+                <p>Founder</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback-box3">
+            <div class="box-content">
+              <p>
+                “ The worlds #3 web data platform from data collection
+                infrastructure to ready-made datasets, brights tow allow you to
+                retrieve the public web data you care about. ”
+              </p>
+            </div>
+            <div class="box-user">
+              <img src="./Images/prof.png" alt="" />
+              <div class="user-info">
+                <h4>Steven Smith</h4>
+                <p>Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of feedback section  -->
+
+      <section class="news-section">
+        <div class="news-header">
+          <div class="news-title">
+            <span>// News</span>
+            <h1>News & Insights</h1>
+          </div>
+          <div class="learn-box">
+            <div class="learn-more">
+              <h4>MORE NEWS</h4>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./Images/news-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4>IT SOLUTIONS</h4>
+                  <p>Jul 10, 2022 --- Romarola H.</p>
+                  <h5>That will bring together 20 industry leading speakers</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./Images/news-2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4>TECHNOLOGY</h4>
+                  <p>Aug 10, 2022 --- Steven</p>
+                  <h5>DevFest for Ukraine is a charitable tech conference</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="./Images/news-3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4>WEB SECURITY</h4>
+                  <p>Aug 16, 2022 --- Perkar</p>
+                  <h5>In times like these, uniting efforts & working together</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of news section  -->
+
+      <!-- start of newsletter section  -->
+
+      <section class="newsletter-section">
+        <!-- <div class="newsletter-body"> -->
+        <div class="newsletter-title">
+          <span>// Newsletter</span>
+          <h1>User feedbacks</h1>
+        </div>
+        <div class="news-content">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email address"
+          />
+          <div class="newsletter-box">
+            <h4>NEWSLETTER</h4>
+          </div>
+          <!-- </div> -->
+        </div>
+      </section>
+
+      <!-- end of newsletter section  -->
+
+      <section class="footer-section">
+        <div class="footer-body">
+          <div class="foot-1">
+            <h2>About Us</h2>
+            <p>
+              Learn from industry-leading speakers like Romain Guy and Chet
+              Haase who have been building Android since 1.0, Jhey Tompkins and
+              Una Kravets from the Google Chrome team.
+            </p>
+          </div>
+          <div class="foot-1">
+            <h2>Pages</h2>
+
+            <div class="foot-2-content">
+              <ul>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Price & Plan</li>
+                <li>Case Study</li>
+                <li>404 Page</li>
+              </ul>
+              <ul>
+                <li>Our Terms</li>
+                <li>Faq</li>
+                <li>News</li>
+                <li>Contact</li>
+                <li>Membership</li>
+              </ul>
+            </div>
+          </div>
+          <div class="foot-1">
+            <h2>Our Services</h2>
+            <ul>
+              <li>Software Solution</li>
+              <li>Digital Marketing</li>
+              <li>UI & UX Design</li>
+              <li>Web Development</li>
+              <li>24/7 Online Support</li>
+            </ul>
+          </div>
+          <div class="foot-1">
+            <h2>Our Availability</h2>
+            <ul>
+              <p>Mon - Fri</p>
+              <h4>10:00 am to 06:00 pm</h4>
+              <br />
+              <p>Saturday (1st & 4th)</p>
+              <h4>08:00 am to 04:00 pm</h4>
+              <li></li>
+              <span class="emergency-box">
+                <img src="./Images/message.png" alt="" />
+                <span>
+                  <h5>Emergency Service</h5>
+                  <h5>000 111 222 333</h5>
+                </span>
+              </span>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bar">
+          <img src="./Images/title-2.png" alt="" />
+          <span>
+            <h3>ABOUT</h3>
+            <h3>FAQ</h3>
+            <h3>CONTACT</h3>
+          </span>
+        </div>
+        <br />
+      </section>
+      <div class="copyright">
+        <p>Copyright & designed by Sreegovind</p>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
